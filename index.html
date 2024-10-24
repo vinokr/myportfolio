@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Microblogging App</title>
+    <link rel="stylesheet" href="m1.css">
+</head>
+<body>
+    <header>
+        <h1>Microblogging Application</h1>
+    </header>
+    <main>
+        <div id="login-container">
+            <h2>Login</h2>
+            <form id="login-form" aria-labelledby="login-container">
+                <label for="username"><b>Username</b></label>
+                <input type="text" id="username" placeholder="Username" required aria-required="true">              
+                <br></br><label for="password"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Password" required aria-required="true">
+                <br></br><button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="post-container" style="display: none;">
+            <h2>Create a Post</h2>
+            <form id="post-form">
+                <textarea id="post-content" placeholder="What's on your mind?" required></textarea>
+                <button type="submit">Post</button>
+            </form>
+            <div id="posts-container"></div>
+        </div>
+    </main>
+    <script src="m1.js"></script>
+</body>
+</html>

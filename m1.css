@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Soft background color */
+}
+
+header {
+    background-color:crimson;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+input[type="text"], input[type="password"] {
+        width: 40%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid blueviolet;
+        box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    font-family: serif;
+}
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.post {
+    background: #fff;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+button {
+    background-color: crimson;
+    font-family: serif;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+button.like {
+    background-color: #007bff;
+    color: white;
+}
+
+button.dislike {
+    background-color: #dc3545;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button.like:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+button.dislike:hover {
+    background-color: #c82333;
+}
+
+button.comment:hover {
+    background-color: #f4f4f4;
+    color: #007bff;
+}
+
+#login-container {
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+}
+
+.comment-input {
+    width: 80%;
+}
+
+ul {
+    padding-left: 20px;
+}
