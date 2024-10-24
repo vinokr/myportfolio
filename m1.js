@@ -10,11 +10,6 @@ loginForm.addEventListener('submit', (event)=>{
     event.preventDefault(); // Prevent default form submission
 
     const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-
-    // Simple authentication check
-    const user = users.find(user => user.username === username && user.password === password);
-    
     if (username) {
         currentUser = username;
         document.getElementById('login-container').style.display = 'none';
