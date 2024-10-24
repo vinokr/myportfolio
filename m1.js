@@ -15,13 +15,13 @@ loginForm.addEventListener('submit', (event)=>{
     // Simple authentication check
     const user = users.find(user => user.username === username && user.password === password);
     
-    if (user) {
-        currentUser = user;
+    if (username) {
+        currentUser = username;
         document.getElementById('login-container').style.display = 'none';
         document.getElementById('post-container').style.display = 'block';
         alert(`Login successfully!Welcome, ${username}!`);
     } else {
-        alert('Invalid username or password. Please try again.');
+        alert(`Invalid username or password. Please try again.`);
     }
 });
 postForm.addEventListener('submit', function(event) {
